@@ -17,19 +17,19 @@ const auth = authStore
           <li>
             <router-link to="/posts">Posts</router-link>
           </li>
-          <li>
+          <!-- <li>
             <router-link to="/protected">Protected</router-link>
-          </li>
+          </li> -->
 
-         <li>
-          <!-- <li v-if="auth.user.role=='admin'"> -->
+         <!-- <li>
+          // cmt e thakbe ei line <li v-if="auth.user.role=='admin'">
             <router-link to="/admin">Admin</router-link>
-          </li>
+          </li> -->
 
-          <li>
-          <!-- <li v-if="auth.user.role=='editor' || auth.user.role=='admin'"> -->
+          <!-- <li>
+           // comt  e thakbe ei line <li v-if="auth.user.role=='editor' || auth.user.role=='admin'">
             <router-link to="/editor">Editor</router-link>
-          </li>
+          </li> -->
 
           <li v-if="!auth.isAuthenticated">
             <router-link to="/login">Login</router-link>
